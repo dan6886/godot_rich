@@ -236,7 +236,8 @@ func make_layer(layer, parent, root, data):
 
 		tilemap.position = offset + map_pos_offset
 		tilemap.tile_set = tileset
-
+		print(layer_size)
+		tilemap.set_meta("map_size",layer_size)
 		var chunks = []
 
 		if infinite:

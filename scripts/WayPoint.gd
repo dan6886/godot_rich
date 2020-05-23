@@ -7,13 +7,14 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
+
+var land_col = -1
+var land_row = -1
+var col  =-1
+var row = -1
+var ref = null
 func _ready():
-	var child = get_child(0)
-	var object = child.get_child(3)
-	var childs = object.get_children()
-	print(childs)
-	for v in childs:
-		print(v.get_meta("land_row"))
+	
 	pass # Replace with function body.
 
 

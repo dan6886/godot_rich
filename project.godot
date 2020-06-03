@@ -8,25 +8,45 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "BaseEvent",
+"language": "GDScript",
+"path": "res://scripts/BaseEvent.gd"
+}, {
+"base": "Node",
+"class": "CheckLandEvent",
+"language": "GDScript",
+"path": "res://scripts/CheckLandEvent.gd"
+}, {
+"base": "Node",
+"class": "Game",
+"language": "GDScript",
+"path": "res://scripts/GameController.gd"
+}, {
+"base": "Node2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/Player.gd"
+}, {
+"base": "Node",
+"class": "StopWayEvent",
+"language": "GDScript",
+"path": "res://scripts/StopWayEvent.gd"
+} ]
 _global_script_class_icons={
-
+"BaseEvent": "",
+"CheckLandEvent": "",
+"Game": "",
+"Player": "",
+"StopWayEvent": ""
 }
 
 [application]
 
-config/name="11"
-run/main_scene="res://Node211D.tscn"
+config/name="22"
 config/icon="res://icon.png"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "vnen.tiled_importer" )
 
 [rendering]
 
 environment/default_environment="res://default_env.tres"
-
-[tiled_importer]
-
-enable_json_format=true
